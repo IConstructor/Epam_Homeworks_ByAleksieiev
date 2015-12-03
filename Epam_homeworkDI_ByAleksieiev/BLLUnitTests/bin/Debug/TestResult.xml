@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Denys\Desktop\Epam_homeworkDI_ByAleksieiev\BLLUnitTests\bin\Debug\BLLUnitTests.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-12-03" time="20:56:38">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8670" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Denys\Desktop\Epam_homeworkDI_ByAleksieiev\packages\NUnit.Runners.2.6.3\tools" machine-name="DESKTOP-P6FG5BV" user="Denys" user-domain="DESKTOP-P6FG5BV" />
+  <culture-info current-culture="ru-RU" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="C:\Users\Denys\Desktop\Epam_homeworkDI_ByAleksieiev\BLLUnitTests\bin\Debug\BLLUnitTests.dll" executed="True" result="Success" success="True" time="0.029" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="BLLUnitTests" executed="True" result="Success" success="True" time="0.029" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="ComputerServiceTest" executed="True" result="Success" success="True" time="0.009" asserts="0">
+            <results>
+              <test-case name="BLLUnitTests.ComputerServiceTest.GetAllComputersTest" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+              <test-case name="BLLUnitTests.ComputerServiceTest.GetComputerByProducerNameTest" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CustomerServiceTest" executed="True" result="Success" success="True" time="0.008" asserts="0">
+            <results>
+              <test-case name="BLLUnitTests.CustomerServiceTest.AddComputerTest" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+              <test-case name="BLLUnitTests.CustomerServiceTest.GetAllCustomersTest" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="ProducerServiceTest" executed="True" result="Success" success="True" time="0.004" asserts="0">
+            <results>
+              <test-case name="BLLUnitTests.ProducerServiceTest.GetProducers" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

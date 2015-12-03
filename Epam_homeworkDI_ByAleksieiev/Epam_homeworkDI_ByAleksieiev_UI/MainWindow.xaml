@@ -1,0 +1,26 @@
+﻿<Window x:Class="Epam_homeworkDI_ByAleksieiev_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Epam_homeworkDI_ByAleksieiev_UI"
+        mc:Ignorable="d"
+        Title="Computer Shop" Height="350" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <ListBox x:Name="CustomerListBox" HorizontalAlignment="Left" Height="151" Margin="10,53,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="CustomerListBox_SelectionChanged"/>
+        <Label x:Name="label" Content="Customers" HorizontalAlignment="Left" Margin="28,22,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ProducersListBox" HorizontalAlignment="Left" Height="151" Margin="192,53,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="ProducersListBox_SelectionChanged"/>
+        <Label x:Name="label_Copy" Content="Computer producers" HorizontalAlignment="Left" Margin="185,22,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ComputersListBox" HorizontalAlignment="Left" Height="151" Margin="326,53,0,0" VerticalAlignment="Top" Width="137" SelectionChanged="ComputersListBox_SelectionChanged"/>
+        <Label x:Name="label_Copy1" Content="Available Computers" HorizontalAlignment="Left" Margin="336,22,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BuyButton" Content="Buy" HorizontalAlignment="Left" Margin="230,263,0,0" VerticalAlignment="Top" Width="75" Click="BuyButton_Click"/>
+        <Label x:Name="label_Copy2" Content="(Choose a customer)" HorizontalAlignment="Left" Margin="0,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy3" Content="(Choose a producer)" HorizontalAlignment="Left" Margin="187,209,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy4" Content="(Choose a computer)" HorizontalAlignment="Left" Margin="336,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" HorizontalAlignment="Left" Margin="114,22,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="-158,209,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="MoneyLabel" Content="" HorizontalAlignment="Left" Margin="115,53,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PriceLabel" Content="" HorizontalAlignment="Left" Margin="468,53,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
