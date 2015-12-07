@@ -14,7 +14,6 @@ namespace Epam_MVCTask1_ByAleksieiev_DAL
         {
             COMMENT1 = new HashSet<COMMENT>();
         }
-
         [Key]
         public int CommentPK { get; set; }
 
@@ -28,10 +27,8 @@ namespace Epam_MVCTask1_ByAleksieiev_DAL
         public int? GameFK { get; set; }
 
         public virtual GAME GAME { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<COMMENT> COMMENT1 { get; set; }
-
         public virtual COMMENT COMMENT2 { get; set; }
     }
 }

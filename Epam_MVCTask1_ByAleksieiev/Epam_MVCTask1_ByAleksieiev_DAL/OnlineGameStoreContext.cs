@@ -8,9 +8,8 @@ namespace Epam_MVCTask1_ByAleksieiev_DAL
     public partial class OnlineGameStoreContext : DbContext
     {
         public OnlineGameStoreContext()
-            : base("name=OnlineGameStoreConnection")
+            : base("name=OnlineGameStoreContext")
         {
-            Database.SetInitializer(new ContextInitializer());
         }
 
         public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
