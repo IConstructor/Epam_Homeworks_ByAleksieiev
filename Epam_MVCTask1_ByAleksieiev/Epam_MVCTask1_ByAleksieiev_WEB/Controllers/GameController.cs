@@ -3,7 +3,11 @@ using Epam_MVCTask1_ByAleksieiev_BLL;
 using Epam_MVCTask1_ByAleksieiev_DAL;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -22,7 +26,6 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         [System.Web.Http.HttpPost]
         public void New([FromBody]Game value)
         {
-            Mapper.CreateMap<Game, GameDTO>();
             var result = Mapper.Map<Game, GameDTO>(value);
             gameService.CreateGame(result);
         }
@@ -32,10 +35,6 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         [System.Web.Http.HttpPost]
         public void Remove([FromBody]Game value)
         {
-            Mapper.CreateMap<Game, GameDTO>();
-            Mapper.CreateMap<Comment, CommentDTO>();
-            Mapper.CreateMap<Genre, GenreDTO>();
-            Mapper.CreateMap<Platformtype, PlatformtypeDTO>();
             var result = Mapper.Map<Game, GameDTO>(value);
             gameService.DeleteGame(result);
         }
@@ -45,10 +44,6 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         [System.Web.Http.HttpPost]
         public void Update([FromBody]Game value)
         {
-            Mapper.CreateMap<Game, GameDTO>();
-            Mapper.CreateMap<Comment, CommentDTO>();
-            Mapper.CreateMap<Genre, GenreDTO>();
-            Mapper.CreateMap<Platformtype, PlatformtypeDTO>();
             var result = Mapper.Map<Game, GameDTO>(value);
             gameService.ModifyGame(result);
         }
@@ -60,7 +55,6 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         public void Newcomment(int id, Comment comment)
         {
             var game = gameService.GetGameById(id);
-            Mapper.CreateMap<Comment, CommentDTO>();
             var com = Mapper.Map<Comment, CommentDTO>(comment);
             game.COMMENT.Add(com);
             gameService.ModifyGame(game);
@@ -72,10 +66,6 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         public List<Comment> Comments(int id)
         {
             var game = gameService.GetGameById(id);
-            Mapper.CreateMap<GameDTO, Game>();
-            Mapper.CreateMap<CommentDTO, Comment>();
-            Mapper.CreateMap<GenreDTO, Genre>();
-            Mapper.CreateMap<PlatformtypeDTO, Platformtype>();
             var result = Mapper.Map<List<CommentDTO>, List<Comment>>(game.COMMENT);
             return result;
         }
@@ -84,10 +74,6 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         //get all games
         public IEnumerable<Game> Get()
         {
-            Mapper.CreateMap<GameDTO, Game>();
-            Mapper.CreateMap<CommentDTO, Comment>();
-            Mapper.CreateMap<GenreDTO, Genre>();
-            Mapper.CreateMap<PlatformtypeDTO, Platformtype>();
             var result = Mapper.Map<List<GameDTO>, List<Game>>(gameService.GetAllGames()); 
             return result;
         }
@@ -96,12 +82,42 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         public Game Get(int id)
         {
             var game = gameService.GetGameById(id);
-            Mapper.CreateMap<GameDTO, Game>();
-            Mapper.CreateMap<CommentDTO, Comment>();
-            Mapper.CreateMap<GenreDTO, Genre>();
-            Mapper.CreateMap<PlatformtypeDTO, Platformtype>();
             var result = Mapper.Map<GameDTO, Game>(game);
             return result;
+        }
+
+
+        [System.Web.Http.HttpGet]
+        [System.Web.Http.Route("{id}/download")]
+        public HttpResponseMessage Download(int id)
+        {
+            HttpResponseMessage httpResponseMessage = new HttpResponseMessage();
+            string filePath = HttpContext.Current.Server.MapPath("~/Content/") + @"file.txt";
+            MemoryStream memoryStream = new MemoryStream();
+            FileStream file = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            byte[] bytes = new byte[file.Length];
+            file.Read(bytes, 0, (int)file.Length);
+            memoryStream.Write(bytes, 0, (int)file.Length);
+            file.Close();
+            httpResponseMessage.Content = new ByteArrayContent(memoryStream.ToArray());
+            httpResponseMessage.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+            httpResponseMessage.StatusCode = HttpStatusCode.OK;
+            return httpResponseMessage;
+        }
+
+        public static HttpResponseMessage FileAsAttachment(string path, string filename)
+        {
+            if (File.Exists(path))
+            {
+                HttpResponseMessage result = new HttpResponseMessage(HttpStatusCode.OK);
+                var stream = new FileStream(path, FileMode.Open);
+                result.Content = new StreamContent(stream);
+                result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+                result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
+                result.Content.Headers.ContentDisposition.FileName = filename;
+                return result;
+            }
+            return new HttpResponseMessage(HttpStatusCode.NotFound);
         }
     }
 }

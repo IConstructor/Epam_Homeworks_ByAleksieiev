@@ -11,6 +11,7 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB
     {
         protected void Application_Start()
         {
+            AutomapInitializer.Initialize();
             GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             GlobalConfiguration.Configuration.Formatters.Remove(GlobalConfiguration.Configuration.Formatters.XmlFormatter);
             GlobalConfiguration.Configure(WebApiConfig.Register);

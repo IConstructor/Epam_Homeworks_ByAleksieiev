@@ -8,3 +8,13 @@ c:\Users\Denys\Documents\Visual Studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\
 c:\Users\Denys\Documents\Visual Studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.xml
 c:\Users\Denys\Documents\Visual Studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Denys\documents\visual studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\obj\Debug\Epam_MVCTask1_ByAleksieiev_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\Epam_MVCTask1_ByAleksieiev_DAL.dll.config
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\Epam_MVCTask1_ByAleksieiev_DAL.dll
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\Epam_MVCTask1_ByAleksieiev_DAL.pdb
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.dll
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.xml
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\obj\Debug\Epam_MVCTask1_ByAleksieiev_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\obj\Debug\Epam_MVCTask1_ByAleksieiev_DAL.dll
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\obj\Debug\Epam_MVCTask1_ByAleksieiev_DAL.pdb
