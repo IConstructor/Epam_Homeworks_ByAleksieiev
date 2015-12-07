@@ -1,0 +1,9 @@
+c:\users\denys\documents\visual studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\Epam_MVCTask1_ByAleksieiev_DAL.dll.config
+c:\users\denys\documents\visual studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\Epam_MVCTask1_ByAleksieiev_DAL.dll
+c:\users\denys\documents\visual studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\Epam_MVCTask1_ByAleksieiev_DAL.pdb
+c:\users\denys\documents\visual studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\obj\Debug\Epam_MVCTask1_ByAleksieiev_DAL.dll
+c:\users\denys\documents\visual studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\obj\Debug\Epam_MVCTask1_ByAleksieiev_DAL.pdb
+c:\Users\Denys\Documents\Visual Studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.dll
+c:\Users\Denys\Documents\Visual Studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Denys\Documents\Visual Studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.xml
+c:\Users\Denys\Documents\Visual Studio 2015\Projects\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.SqlServer.xml
