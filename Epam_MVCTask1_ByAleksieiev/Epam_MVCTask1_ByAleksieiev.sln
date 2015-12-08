@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam_MVCTask1_ByAleksieiev_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam_MVCTask1_ByAleksieiev_WEB", "Epam_MVCTask1_ByAleksieiev_WEB\Epam_MVCTask1_ByAleksieiev_WEB.csproj", "{208702E2-BBD9-47D8-A707-637D3699F52A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam_MVCTask1_ByAleksieiev_UnitTests", "Epam_MVCTask1_ByAleksieiev_UnitTests\Epam_MVCTask1_ByAleksieiev_UnitTests.csproj", "{2B5EC9A9-2FDE-4F3B-B2BC-3D23DBFD1F9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{208702E2-BBD9-47D8-A707-637D3699F52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{208702E2-BBD9-47D8-A707-637D3699F52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{208702E2-BBD9-47D8-A707-637D3699F52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B5EC9A9-2FDE-4F3B-B2BC-3D23DBFD1F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B5EC9A9-2FDE-4F3B-B2BC-3D23DBFD1F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B5EC9A9-2FDE-4F3B-B2BC-3D23DBFD1F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B5EC9A9-2FDE-4F3B-B2BC-3D23DBFD1F9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

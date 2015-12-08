@@ -52,3 +52,6 @@ C:\Users\Denys\Desktop\Epam_homeworkDI_ByAleksieiev\Epam_homeworkDI_ByAleksieiev
 C:\Users\Denys\Desktop\Epam_homeworkDI_ByAleksieiev\Epam_homeworkDI_ByAleksieiev_UI\obj\Debug\Epam_homeworkDI_ByAleksieiev_UI.g.resources
 C:\Users\Denys\Desktop\Epam_homeworkDI_ByAleksieiev\Epam_homeworkDI_ByAleksieiev_UI\obj\Debug\Epam_homeworkDI_ByAleksieiev_UI.Properties.Resources.resources
 C:\Users\Denys\Desktop\Epam_homeworkDI_ByAleksieiev\Epam_homeworkDI_ByAleksieiev_UI\obj\Debug\Epam_homeworkDI_ByAleksieiev_UI.csproj.GenerateResource.Cache
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_homeworkDI_ByAleksieiev\Epam_homeworkDI_ByAleksieiev_UI\bin\Debug\Epam_homeworkDI_ByAleksieiev_UI.exe.config
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_homeworkDI_ByAleksieiev\Epam_homeworkDI_ByAleksieiev_UI\obj\Debug\Epam_homeworkDI_ByAleksieiev_UI.exe
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_homeworkDI_ByAleksieiev\Epam_homeworkDI_ByAleksieiev_UI\obj\Debug\Epam_homeworkDI_ByAleksieiev_UI.pdb

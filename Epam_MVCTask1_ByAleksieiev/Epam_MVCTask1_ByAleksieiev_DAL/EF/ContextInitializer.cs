@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Epam_MVCTask1_ByAleksieiev_DAL
 {
-    class ContextInitializer : DropCreateDatabaseIfModelChanges<OnlineGameStoreContext>
+    class ContextInitializer : CreateDatabaseIfNotExists<OnlineGameStoreContext>
     {
         protected override void Seed(OnlineGameStoreContext context)
         {

@@ -104,20 +104,5 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             httpResponseMessage.StatusCode = HttpStatusCode.OK;
             return httpResponseMessage;
         }
-
-        public static HttpResponseMessage FileAsAttachment(string path, string filename)
-        {
-            if (File.Exists(path))
-            {
-                HttpResponseMessage result = new HttpResponseMessage(HttpStatusCode.OK);
-                var stream = new FileStream(path, FileMode.Open);
-                result.Content = new StreamContent(stream);
-                result.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
-                result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-                result.Content.Headers.ContentDisposition.FileName = filename;
-                return result;
-            }
-            return new HttpResponseMessage(HttpStatusCode.NotFound);
-        }
     }
 }
