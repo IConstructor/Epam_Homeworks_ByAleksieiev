@@ -19,7 +19,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
             AutomapInitializer.Initialize();
         }
         [TestMethod]
-        public void NewTest_SimpleSituation_ExpectedTrue()
+        public void NewTest_WithGameToCreated_ShouldCreate()
         {
             Mock<IGameService> mock = new Mock<IGameService>();
             GameController controller = new GameController(mock.Object);
@@ -29,7 +29,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
 
         [TestMethod]
-        public void RemoveTest_SimpleSituation_ExpectedTrue()
+        public void RemoveTest_WithGameToRemove_ShouldRemove()
         {
             Mock<IGameService> mock = new Mock<IGameService>();
             GameController controller = new GameController(mock.Object);
@@ -39,7 +39,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
 
         [TestMethod]
-        public void UpdateTest_SimpleSituation_ExpectedTrue()
+        public void UpdateTest_WithModificatedGame_ShouldUpdate()
         {
             Mock<IGameService> mock = new Mock<IGameService>();
             GameController controller = new GameController(mock.Object);
@@ -49,7 +49,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
 
         [TestMethod]
-        public void NewcommentTest_SimpleSituation_ExpectedTrue()
+        public void NewcommentTest_WithGamesId_ShouldCreateNewComment()
         {
             Mock<IGameService> mock = new Mock<IGameService>();
             Mock<GameDTO> game = new Mock<GameDTO>();
@@ -64,7 +64,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
 
         [TestMethod]
-        public void CommentsTest_SimpleSituation_ExpectedTrue()
+        public void CommentsTest_WithGamesId_ShouldReturnComments()
         {
             Mock<IGameService> mock = new Mock<IGameService>();
             Mock<GameDTO> game = new Mock<GameDTO>();
@@ -77,7 +77,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
 
 
         [TestMethod]
-        public void GetTest_SimpleSituation_ExpectedTrue()
+        public void GetTest_ByDefault_SHouldReturnGames()
         {
             Mock<IGameService> mock = new Mock<IGameService>();
             GameController controller = new GameController(mock.Object);
@@ -86,7 +86,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
 
         [TestMethod]
-        public void GetByIdTest_SimpleSituation_ExpectedTrue()
+        public void GetByIdTest_WithGamesId_ShouldReturnGame()
         {
             Mock<IGameService> mock = new Mock<IGameService>();
             GameController controller = new GameController(mock.Object);
@@ -96,20 +96,10 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
 
         [TestMethod]
         [ExpectedExceptionAttribute(typeof(NullReferenceException))]
-        public void DownloadTest_SimpleSituation_ExpectedTrue()
+        public void DownloadTest_SimpleSituation_ExpectedException()
         {
             Mock<IGameService> mock = new Mock<IGameService>();
             GameController controller = new GameController(mock.Object);
-            HttpResponseMessage response = controller.Download(It.IsAny<int>());
-        }
-
-        [TestMethod]
-        [ExpectedExceptionAttribute(typeof(NullReferenceException))]
-        public void DownlddTest_SimpleSituation_ExpectedTrue()
-        {
-            Mock<IGameService> mock = new Mock<IGameService>();
-            GameController controller = new GameController(mock.Object);
-            string path = "../../" + Environment.CurrentDirectory;
             HttpResponseMessage response = controller.Download(It.IsAny<int>());
         }
     }

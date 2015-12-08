@@ -21,7 +21,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
         
         [TestMethod]
-        public void GetAllGamesTest_SimpleSituation_ExpectedTrue()
+        public void GetAllGamesTest_ByDefault_ShouldReturnAllGames()
         {
             List<GAME> games = new List<GAME>();
             var game = new GAME();
@@ -36,7 +36,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
 
         [TestMethod]
-        public void GetGameByIdTest_SimpleSituation_ExpectedTrue()
+        public void GetGameByIdTest_WithGamesId_ShouldReturnGame()
         {
             List<GAME> games = new List<GAME>();
             var game = new GAME();
@@ -52,7 +52,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
 
 
         [TestMethod]
-        public void CreateGameTest_SimpleSituation_ExpectedTrue()
+        public void CreateGameTest_WithGameToCreate_ShouldInvokeMethodAddInRepository()
         {
             List<GAME> games = new List<GAME>();
             var game = new GAME();
@@ -71,7 +71,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
 
         [TestMethod]
-        public void DeleteGameTest_SimpleSituation_ExpectedTrue()
+        public void DeleteGameTest_WithGameToDelete_ShouldInvokeRepositoryMethodRemove()
         {
             List<GAME> games = new List<GAME>();
             var game = new GAME();
@@ -90,7 +90,7 @@ namespace Epam_MVCTask1_ByAleksieiev_UnitTests
         }
 
         [TestMethod]
-        public void UpdateGameTest_SimpleSituation_ExpectedTrue()
+        public void UpdateGameTest_WithGameToUpdate_ShouldInvokeRepositoryMethodModify()
         {
             List<GAME> games = new List<GAME>();
             var game = new GAME();

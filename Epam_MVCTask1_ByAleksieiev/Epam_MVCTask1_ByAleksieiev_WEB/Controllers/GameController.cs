@@ -86,7 +86,11 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             return result;
         }
 
-
+        /// <summary>
+        /// This method cannot be covered fully because of HttpContext which is not available from unit tests.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [System.Web.Http.HttpGet]
         [System.Web.Http.Route("{id}/download")]
         public HttpResponseMessage Download(int id)
