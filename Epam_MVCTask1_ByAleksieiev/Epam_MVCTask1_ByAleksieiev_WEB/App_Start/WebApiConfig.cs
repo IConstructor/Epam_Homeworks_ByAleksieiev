@@ -25,11 +25,7 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB
 );
 
 
-            //config.Routes.MapHttpRoute(
-            //    name: "IdActionApi",
-            //    routeTemplate: "api/{controller}/{id}/{action}",
-            //    defaults: new { id = RouteParameter.Optional }
-            //    );
+            log4net.Config.XmlConfigurator.Configure();
         }
     }
 }

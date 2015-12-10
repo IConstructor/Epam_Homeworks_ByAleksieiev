@@ -5,9 +5,9 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB
 {
     public class FilterConfig
     {
-        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        public static void RegisterWebApiFilters(System.Web.Http.Filters.HttpFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new IpLogger());
         }
     }
 }
