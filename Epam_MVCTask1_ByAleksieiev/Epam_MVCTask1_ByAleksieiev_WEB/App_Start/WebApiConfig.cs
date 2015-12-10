@@ -23,8 +23,6 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
 );
-
-
             log4net.Config.XmlConfigurator.Configure();
         }
     }

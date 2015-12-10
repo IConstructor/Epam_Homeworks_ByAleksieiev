@@ -15,16 +15,17 @@ using System.Web.Mvc;
 
 namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
 {
-    [OutputCache(Location = System.Web.UI.OutputCacheLocation.Client)]
+    [PerformanceLogger]
+    [OutputCache(Location = System.Web.UI.OutputCacheLocation.Client, NoStore = true)]
     [System.Web.Http.RoutePrefix("api/game")]
     public class GameController : ApiController
     {
-        IGameService gameService;
+        readonly IGameService _gameService;
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         public GameController(IGameService gameService)
         {
-            this.gameService = gameService;
+            this._gameService = gameService;
         }
         // GET api/values/5
         [System.Web.Http.HttpPost]
@@ -33,13 +34,13 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             try
             {
                 var result = Mapper.Map<Game, GameDTO>(value);
-                gameService.CreateGame(result);
+                _gameService.CreateGame(result);
+                Log.Info(String.Format("New game was created. ID = {1}, Name = {0}", value.Name, value.GamePK));
             }
             catch(Exception exc)
             {
                 Log.ErrorFormat(exc.ToString());
             }
-            Log.Info(String.Format("New game was created. ID = {1}, Name = {0}",value.Name,value.GamePK));
         }
 
 
@@ -49,13 +50,13 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         {
             try{
                 var result = Mapper.Map<Game, GameDTO>(value);
-                gameService.DeleteGame(result);
+                _gameService.DeleteGame(result);
+                Log.InfoFormat("Game:{0}, Id={1} was deleted by Remove(Game value) method.", value.Name, value.GamePK);
             }
             catch (Exception exc)
             {
                 Log.ErrorFormat(exc.ToString());
             }
-            Log.Info(String.Format("Game:{0}, Id={1} was deleted by Remove(Game value) method.", value.Name,value.GamePK));
         }
 
 
@@ -65,13 +66,13 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         {
             try {
                 var result = Mapper.Map<Game, GameDTO>(value);
-                gameService.ModifyGame(result);
+                _gameService.ModifyGame(result);
+                Log.InfoFormat("Game:{0}, Id={1} was updated by Update(value) method.", value.Name, value.GamePK);
             }
             catch (Exception exc)
             {
                 Log.ErrorFormat(exc.ToString());
             }
-            Log.Info(String.Format("Game:{0}, Id={1} was updated by Update(value) method.", value.Name,value.GamePK));
         }
 
         // GET api/values/5
@@ -80,11 +81,11 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         public void Newcomment(int id, Comment comment)
         {
             try {
-                var game = gameService.GetGameById(id);
+                var game = _gameService.GetGameById(id);
                 var com = Mapper.Map<Comment, CommentDTO>(comment);
                 game.COMMENT.Add(com);
-                gameService.ModifyGame(game);
-                Log.Info(String.Format("A new comment for game:{0}, Id={1} was addeded by Newcomment(int id, Comment comment) method.", game.Name, game.GamePK));
+                _gameService.ModifyGame(game);
+                Log.InfoFormat("A new comment for game:{0}, Id={1} was addeded by Newcomment(int id, Comment comment) method.", game.Name, game.GamePK);
             }
             catch (Exception exc)
             {
@@ -101,13 +102,13 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             List<Comment> result = null;
             try
             {
-                var game = gameService.GetGameById(id);
+                var game = _gameService.GetGameById(id);
                 result = Mapper.Map<List<CommentDTO>, List<Comment>>(game.COMMENT);
-                Log.Info(String.Format("All comments of game:{0}, Id={1} were returned by Comments(int id) method. There are {0} comments", result.Count));
+                Log.InfoFormat("All comments of game:{0} were returned by Comments(int id) method. There are {0} comments", result.Count);
 
                 for (int i = 0; i < result.Count; i++)
                 {
-                    Log.Info(String.Format("COMMENT{2}: ID = {1}, Name = {0}", result[i].Name, result[i].CommentPK, i));
+                    Log.InfoFormat("COMMENT{2}: ID = {1}, Name = {0}", result[i].Name, result[i].CommentPK, i);
                 }
             }
             catch (Exception exc)
@@ -123,11 +124,11 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         {
             List<Game> result = null;
             try {
-                result = Mapper.Map<List<GameDTO>, List<Game>>(gameService.GetAllGames());
-                Log.Info(String.Format("All games returned by Get() method. There are {0} games", result.Count));
+                result = Mapper.Map<List<GameDTO>, List<Game>>(_gameService.GetAllGames());
+                Log.InfoFormat("All games returned by Get() method. There are {0} games", result.Count);
                 for (int i = 0; i < result.Count; i++)
                 {
-                    Log.Info(String.Format("GAME{2}: ID = {1}, Name = {0}", result[i].Name, result[i].GamePK, i));
+                    Log.InfoFormat("GAME{2}: ID = {1}, Name = {0}", result[i].Name, result[i].GamePK, i);
                 }
             }
             catch (Exception exc)
@@ -143,8 +144,9 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         {
             Game result = null;
             try {
-                var game = gameService.GetGameById(id);
+                var game = _gameService.GetGameById(id);
                 result = Mapper.Map<GameDTO, Game>(game);
+                Log.InfoFormat("Game ID = {1}, Name = {0}", result.Name, result.GamePK);
             }
             catch (Exception exc)
             {
@@ -175,7 +177,7 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
                 httpResponseMessage.Content = new ByteArrayContent(memoryStream.ToArray());
                 httpResponseMessage.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
                 httpResponseMessage.StatusCode = HttpStatusCode.OK;
-                Log.Info(String.Format("Game with ID = {0} was downloaded", id));
+                Log.InfoFormat("Game with ID = {0} was downloaded", id);
             }
             catch (Exception exc)
             {

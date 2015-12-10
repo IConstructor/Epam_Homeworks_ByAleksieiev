@@ -17,9 +17,8 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB
         public override void OnActionExecuting(HttpActionContext filterContext)
         {
             string ip = ((HttpContextBase)filterContext.Request.Properties["MS_HttpContext"]).Request.UserHostAddress;
-            ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            Log.InfoFormat("Client ip is {0}", ip);
+            ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            log.InfoFormat("Client ip is {0}", ip);
         }
-      
     }
 }
