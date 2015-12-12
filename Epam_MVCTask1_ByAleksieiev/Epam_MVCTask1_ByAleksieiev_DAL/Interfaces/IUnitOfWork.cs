@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Epam_MVCTask1_ByAleksieiev_DAL
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         IRepository<GAME> Games { get; }
-        void Save();
+        void Commit();
     }
 }

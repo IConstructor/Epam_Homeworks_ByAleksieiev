@@ -27,5 +27,5 @@ C:\Users\Denys\Desktop\Epam_Homeworks_ByAleksieiev-master\Epam_MVCTask1_ByAleksi
 C:\Users\Denys\Desktop\Epam_Homeworks_ByAleksieiev-master\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Denys\Desktop\Epam_Homeworks_ByAleksieiev-master\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\obj\Debug\Epam_MVCTask1_ByAleksieiev_DAL.dll
 C:\Users\Denys\Desktop\Epam_Homeworks_ByAleksieiev-master\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\obj\Debug\Epam_MVCTask1_ByAleksieiev_DAL.pdb
-C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\OnlineGameStoreDatabase.mdf
-C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\OnlineGameStoreDatabase_log.ldf
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\Database\OnlineGameStoreDatabase.mdf
+C:\Users\Denys\Desktop\Epam\Epam_Homeworks\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_DAL\bin\Debug\Database\OnlineGameStoreDatabase_log.ldf

@@ -27,7 +27,11 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
         {
             this._gameService = gameService;
         }
-        // GET api/values/5
+      
+        /// <summary>
+        /// route: api/game/new
+        /// </summary>
+        /// <param name="value"></param>
         [System.Web.Http.HttpPost]
         public void New([FromBody]Game value)
         {
@@ -43,8 +47,10 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             }
         }
 
-
-        // GET api/values/5
+        /// <summary>
+        /// route: api/game/remove
+        /// </summary>
+        /// <param name="value"></param>
         [System.Web.Http.HttpPost]
         public void Remove([FromBody]Game value)
         {
@@ -59,8 +65,10 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             }
         }
 
-
-        // GET api/values/5
+        /// <summary>
+        /// route: api/game/update
+        /// </summary>
+        /// <param name="value"></param>
         [System.Web.Http.HttpPost]
         public void Update([FromBody]Game value)
         {
@@ -75,7 +83,11 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             }
         }
 
-        // GET api/values/5
+        /// <summary>
+        /// route: api/game/{id}/newcomment
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="comment"></param>
         [System.Web.Http.HttpPost]
         [System.Web.Http.Route("{id}/newcomment")]
         public void Newcomment(int id, Comment comment)
@@ -94,7 +106,11 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             
         }
 
-        // GET api/values/5
+        /// <summary>
+        /// route: api/game/{id}/comments
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [System.Web.Http.HttpPost]
         [System.Web.Http.Route("{id}/comments")]
         public List<Comment> Comments(int id)
@@ -118,8 +134,10 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
                 return result;
         }
 
-
-        //get all games
+        /// <summary>
+        /// route: api/game/
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Game> Get()
         {
             List<Game> result = null;
@@ -139,7 +157,11 @@ namespace Epam_MVCTask1_ByAleksieiev_WEB.Controllers
             return result;
         }
 
-        //GET api/values/5 //get details
+        /// <summary>
+        /// route: api/game/{id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Game Get(int id)
         {
             Game result = null;

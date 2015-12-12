@@ -66,15 +66,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="COMMENT.cs" />
-    <Compile Include="C__MigrationHistory.cs" />
+    <Compile Include="Entities\COMMENT.cs" />
+    <Compile Include="EF\C__MigrationHistory.cs" />
     <Compile Include="EF\ContextInitializer.cs" />
-    <Compile Include="GAME.cs" />
-    <Compile Include="GENRE.cs" />
+    <Compile Include="Entities\GAME.cs" />
+    <Compile Include="Entities\GENRE.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
-    <Compile Include="OnlineGameStoreContext.cs" />
-    <Compile Include="PLATFORMTYPE.cs" />
+    <Compile Include="EF\OnlineGameStoreContext.cs" />
+    <Compile Include="Entities\PLATFORMTYPE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EFUnitOfWork.cs" />
     <Compile Include="Repositories\GameRepository.cs" />
@@ -86,10 +86,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="OnlineGameStoreDatabase.mdf">
+    <Content Include="Database\OnlineGameStoreDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="OnlineGameStoreDatabase_log.ldf">
+    <Content Include="Database\OnlineGameStoreDatabase_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>OnlineGameStoreDatabase.mdf</DependentUpon>
     </Content>

@@ -20,7 +20,6 @@ namespace Epam_MVCTask1_ByAleksieiev_DAL
 
         public List<GAME> GetItems()
         {
-            context.Configuration.LazyLoadingEnabled = false;
             return context.GAME.Include("GENRE").Include("COMMENT").Include("PLATFORMTYPE").ToList();
         }
 
@@ -35,15 +34,8 @@ namespace Epam_MVCTask1_ByAleksieiev_DAL
             if (original != null)
             {
                 context.GAME.Remove(original);
-                context.SaveChanges();
                 context.GAME.Add(item);
-                context.SaveChanges();
             }
-        }
-
-        public void Save()
-        {
-            context.SaveChanges();
         }
     }
 }

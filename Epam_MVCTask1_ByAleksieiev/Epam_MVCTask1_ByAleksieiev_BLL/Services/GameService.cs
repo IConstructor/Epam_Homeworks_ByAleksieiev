@@ -28,14 +28,14 @@ namespace Epam_MVCTask1_ByAleksieiev_BLL
         {
             var result = Mapper.Map<GameDTO, GAME>(game);
             database.Games.Add(result);
-            database.Save();
+            database.Commit();
         }
 
         public void DeleteGame(GameDTO game)
         {
             var result = Mapper.Map<GameDTO, GAME>(game);
             database.Games.Remove(result);
-            database.Save();
+            database.Commit();
         }
 
         public List<GameDTO> GetAllGames()
@@ -55,7 +55,7 @@ namespace Epam_MVCTask1_ByAleksieiev_BLL
         {
             var result = Mapper.Map<GameDTO, GAME>(game);
             database.Games.Update(result);
-            database.Save();
+            database.Commit();
         }
     }
 }

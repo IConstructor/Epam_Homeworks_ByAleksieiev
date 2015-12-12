@@ -12,6 +12,5 @@ namespace Epam_MVCTask1_ByAleksieiev_DAL
         void Add(T item);
         void Remove(T item);
         void Update(T item);
-        void Save();
     }
 }

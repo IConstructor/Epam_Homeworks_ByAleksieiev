@@ -1,0 +1,120 @@
+2015-12-10 02:16:53,541 [6] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 02:16:57,739 [6] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 02:59:08,411 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 02:59:08,422 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 03:14:43,985 [5] ERROR Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - System.Exception: Exception of type 'System.Exception' was thrown.
+   at Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController.Get() in C:\Users\Denys\Desktop\Epam_Homeworks_ByAleksieiev-master\Epam_MVCTask1_ByAleksieiev\Epam_MVCTask1_ByAleksieiev_WEB\Controllers\GameController.cs:line 125
+2015-12-10 08:47:40,380 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 08:47:40,402 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 08:49:11,414 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 08:49:11,427 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 08:51:38,302 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 08:51:38,317 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 09:19:02,994 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 09:19:12,078 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 09:19:21,844 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 09:19:21,844 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 12:48:32,724 [6] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 12:48:32,740 [6] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 12:48:47,678 [6] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 0 games
+2015-12-10 12:49:02,795 [9] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 12:49:02,795 [9] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 12:49:02,831 [9] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 0 games
+2015-12-10 12:51:55,339 [13] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 12:51:55,355 [13] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 12:52:01,795 [13] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 12:52:01,795 [13] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 12:53:23,756 [13] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 12:53:23,773 [13] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 12:53:27,516 [13] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 12:53:27,516 [13] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 21:45:40,168 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:45:40,186 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:45:59,660 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 21:45:59,661 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 21:46:23,902 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method  has taken 19501 milliseconds
+2015-12-10 21:46:29,914 [5] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method  has taken 19501 milliseconds
+2015-12-10 21:51:56,142 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:51:56,159 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:52:00,796 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 21:52:00,796 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 21:52:00,833 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Void OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext) has taken 4673 milliseconds
+2015-12-10 21:52:00,833 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Void OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext) has taken 4673 milliseconds
+2015-12-10 21:53:53,293 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:53:53,310 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:53:56,565 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 21:53:56,565 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 21:53:56,585 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Get has taken 3274 milliseconds
+2015-12-10 21:53:56,586 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Get has taken 3274 milliseconds
+2015-12-10 21:54:03,189 [16] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:54:03,189 [16] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:54:03,239 [16] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 21:54:03,239 [16] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 21:54:03,239 [16] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Get has taken 49 milliseconds
+2015-12-10 21:54:03,239 [16] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Get has taken 49 milliseconds
+2015-12-10 21:56:41,549 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:56:41,567 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 21:56:44,836 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 21:56:44,836 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 21:56:44,859 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Get has taken 3291 milliseconds
+2015-12-10 21:56:44,859 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Get has taken 3291 milliseconds
+2015-12-10 22:06:19,963 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:06:19,980 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:06:29,194 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:06:29,194 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:06:29,216 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 9235 milliseconds
+2015-12-10 22:06:29,217 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 9235 milliseconds
+2015-12-10 22:07:01,351 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:07:01,351 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:07:01,357 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:07:01,357 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:07:01,357 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 7 milliseconds
+2015-12-10 22:07:01,357 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 7 milliseconds
+2015-12-10 22:07:16,382 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:07:16,383 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:07:16,390 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:07:16,390 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:07:16,390 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 7 milliseconds
+2015-12-10 22:07:16,390 [8] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 7 milliseconds
+2015-12-10 22:07:29,477 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:07:29,477 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:07:29,485 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:07:29,485 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:07:29,485 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 7 milliseconds
+2015-12-10 22:07:29,485 [11] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 7 milliseconds
+2015-12-10 22:07:30,084 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:07:30,085 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:07:30,090 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:07:30,090 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:07:30,090 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 5 milliseconds
+2015-12-10 22:07:30,090 [7] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method GET has taken 5 milliseconds
+2015-12-10 22:12:56,781 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:12:56,821 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:13:05,862 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:13:05,862 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:13:05,923 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method http://localhost:9286/api/game/ has taken 9101 milliseconds
+2015-12-10 22:13:05,923 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method http://localhost:9286/api/game/ has taken 9101 milliseconds
+2015-12-10 22:15:35,714 [20] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:15:35,738 [20] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:15:39,247 [20] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:15:39,247 [20] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:15:39,268 [20] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method localhost has taken 3530 milliseconds
+2015-12-10 22:15:39,269 [20] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method localhost has taken 3530 milliseconds
+2015-12-10 22:17:04,670 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:17:04,688 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:17:08,401 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:17:08,401 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:17:08,424 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method  has taken 3735 milliseconds
+2015-12-10 22:17:08,424 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method  has taken 3735 milliseconds
+2015-12-10 22:18:36,591 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:18:36,608 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:18:40,693 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:18:40,693 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:18:40,715 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Dns has taken 4105 milliseconds
+2015-12-10 22:18:40,741 [29] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method Dns has taken 4105 milliseconds
+2015-12-10 22:19:59,247 [33] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:19:59,265 [33] INFO  Epam_MVCTask1_ByAleksieiev_WEB.IpLogger - Client ip is ::1
+2015-12-10 22:20:02,633 [33] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - All games returned by Get() method. There are 1 games
+2015-12-10 22:20:02,634 [33] INFO  Epam_MVCTask1_ByAleksieiev_WEB.Controllers.GameController - GAME0: ID = 1, Name = Deus Ex
+2015-12-10 22:20:02,656 [33] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method http://localhost:9286/api/game/ has taken 3390 milliseconds
+2015-12-10 22:20:02,656 [33] INFO  Epam_MVCTask1_ByAleksieiev_WEB.PerformanceLogger - Action method http://localhost:9286/api/game/ has taken 3390 milliseconds
